@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  height: 100vh; /* Full viewport height */
+}
+
+h1 {
+  margin: 5rem;
+  margin-bottom: 1rem; 
+}
+
+.frames {
+  height: 500px;
+  width: 500px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border: 5px solid black;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+}
+
+.frame1 {
+  background-color: #ff6347; /* Tomato */
+}
+
+.frame2 {
+  background-color: #4682b4; /* Steel Blue */
+}
+
+.frame3 {
+  background-color: #32cd32; /* Lime Green */
+}
+
+.frame4 {
+  background-color: #ff8c00; /* Dark Orange */
+}
