@@ -1,6 +1,7 @@
 // WAP for show the use of labeled loops
 
 public class AdvJava_002_LabelledLoops {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         outerLoop:  // Label for outer loop
         for (int i = 1; i <= 3; i++) {
