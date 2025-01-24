@@ -20,7 +20,7 @@ class Cat extends Animal {
     }
 }
 
-public class AdvJava_005_DynamicMethod {
+public class AdvJava_004_DynamicMethod {
     public static void main(String[] args) {
         Animal animal = new Dog();
         animal.sound();

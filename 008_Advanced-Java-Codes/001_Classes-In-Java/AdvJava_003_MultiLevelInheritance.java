@@ -43,7 +43,7 @@ class Son extends Father{
     }
 }
 
-public class AdvJava_004_MultiLevelInheritance {
+public class AdvJava_003_MultiLevelInheritance {
     public static void main(String[] args) {
         Son son = new Son("Hira Lal",84,"Prabhash",50,"Yash",21);
         System.out.println();
