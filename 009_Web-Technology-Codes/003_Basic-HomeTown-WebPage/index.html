@@ -3,97 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to My Hometown</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Arial", sans-serif;
-        background-color: #f0f8ff; /* Alice Blue */
-        color: #333; /* Dark Gray */
-        text-align: center;
-      }
-
-      header {
-        background-color: #4682b4; /* Steel Blue */
-        color: white;
-        padding: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
-
-      .content {
-        padding: 2rem;
-      }
-
-      .content h2 {
-        font-size: 2rem;
-        color: #4682b4;
-      }
-
-      .content p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin: 1rem 0;
-      }
-
-      .content img {
-        max-width: 100%;
-        height: 20rem;
-        border-radius: 10px;
-        margin-top: 1rem 2rem 0 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.8s ease; /* Add transition for smooth effect */
-      }
-
-      .content img:hover {
-        transform: scale(1.1); /* Slightly scale the image on hover */
-      }
-
-      footer {
-        background-color: #4682b4;
-        color: white;
-        padding: 1rem 0;
-        margin-top: 2rem;
-        font-size: 0.9rem;
-      }
-    </style>
+    <!-- Font-Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to Rewa - The Land of White Tigers</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to Rewa (Madhya Pradesh)</h1>
+      <h1>Welcome to Rewa, Madhya Pradesh</h1>
+      <p>The Land of White Tigers and Rich Heritage</p>
     </header>
 
-    <div class="content">
+    <section class="hero">
       <p>
-        Rewa, located in the heart of Madhya Pradesh, is a vibrant city known
-        for its rich history and natural beauty. <br />Famous for its
-        <b>stunning waterfalls, lush forests, and historical landmarks</b> like
-        the Rewa Fort, the city offers a blend of tradition and modernity.
-        <br />Rewa is also renowned as the <b>"Land of White Tigers"</b> ,as it
-        was the birthplace of the rare white tiger species. With its cultural
-        heritage and growing infrastructure.<br />Rewa, often referred to as the
-        <b>"Gateway to the Vindhyas" </b>,is a city steeped in history and
-        surrounded by the breathtaking landscapes of Madhya Pradesh. <br />The
-        city is home to the <b>iconic Rani Talab</b>, an ancient reservoir, and
-        the beautiful <b>Chachai Falls</b>, a popular spot for nature lovers.
+        Rewa is famously known as the <b>Land of White Tigers</b> because the
+        first white tiger in the world was discovered here. The rare white
+        tiger, named Mohan, was found in the jungles of Rewa in 1951 by
+        <b>Maharaja Martand Singh</b>. This discovery played a crucial role in
+        the global conservation and breeding efforts for white tigers. Today,
+        Rewa stands as a proud symbol of this magnificent species and continues
+        to be associated with wildlife heritage, attracting nature lovers and
+        researchers from around the world.
       </p>
-      <img src="Image.jpg" alt="Hometown Image" />
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      <img src="Image2.jpg" alt="Hometown Image" />
-      <p>
-        Rewa is a city that beautifully combines history, culture, and natural
-        beauty, making it a hidden gem in Madhya Pradesh. Whether you're a
-        history buff or a nature lover, Rewa offers something for everyone.With
-        its scenic landscapes and historical significance, Rewa is a destination
-        that promises a memorable experience for all who visit.
-      </p>
-    </div>
+      <br />
 
-    <footer>&copy; 2025 Rewa(MP) | All Rights Reserved</footer>
+      <div style="display: flex; justify-content: center; gap: 15px">
+        <img
+          src="Images/Mukundpur.png"
+          alt="White Tiger of Rewa"
+          style="width: 30%; height: auto; border-radius: 10px"
+        />
+        <img
+          src="Images/White_Tiger_of_Rewa.png"
+          alt="White Tiger of Rewa"
+          style="width: 30%; height: auto; border-radius: 10px"
+        />
+        <!-- <img
+          src="Images/White_Tiger_of_Rewa.png"
+          alt="White Tiger of Rewa"
+          style="width: 30%; height: auto; border-radius: 10px"
+        /> -->
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="card">
+        <img
+          src="Images/Rewa_Fort.png"
+          alt="Rewa Fort"
+          height="200px"
+          width="150px"
+        />
+        <h2>Rewa Fort</h2>
+        <p>
+          An architectural marvel with a deep history, Rewa Fort is a must-visit
+          for history enthusiasts.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images/Keoti_Waterfall.png"
+          alt="Keoti Waterfall"
+          height="200px"
+          width="150px"
+        />
+        <h2>Keoti Waterfall</h2>
+        <p>
+          Keoti Waterfall, one of the highest waterfalls in Madhya Pradesh, is a
+          breathtaking sight during monsoons.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images/Rani_Talab.png"
+          alt="Rani Talab"
+          height="200px"
+          width="150px"
+        />
+        <h2>Rani Talab</h2>
+        <p>
+          One of the oldest and holiest water bodies in Rewa, Rani Talab is a
+          serene place for visitors.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Yash Pandey | Explore the Beauty of Rewa</p>
+      <br />
+      <p>
+        <a href="https://github.com/YashPandey1405/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/yashpandey29/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </p>
+    </footer>
   </body>
 </html>
