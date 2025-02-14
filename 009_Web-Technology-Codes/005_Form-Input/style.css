@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    font-family: Arial, sans-serif;
+    resize: none;
+}
+
+.invalid-feedback {
+    font-size: 0.9rem;
+}

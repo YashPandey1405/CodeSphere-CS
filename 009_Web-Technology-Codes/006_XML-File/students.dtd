@@ -1,0 +1,13 @@
+<!-- 
+    DTD (Document Type Definition) defines the structure and rules for an XML document.
+    This DTD file ensures that the Students XML file follows a consistent structure.
+-->
+
+<!ELEMENT Students (Student+)>  <!-- Root element containing one or more Student elements -->
+
+<!ELEMENT Student (EnrolmentNumber, Name, MobileNumber, EmailId)>  <!-- Each Student contains these elements -->
+
+<!ELEMENT EnrolmentNumber (#PCDATA)>  <!-- Enrolment Number should be parsed character data -->
+<!ELEMENT Name (#PCDATA)>             <!-- Name should be text -->
+<!ELEMENT MobileNumber (#PCDATA)>     <!-- Mobile Number should be text -->
+<!ELEMENT EmailId (#PCDATA)>          <!-- Email should be text -->
