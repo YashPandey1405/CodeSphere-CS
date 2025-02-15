@@ -1,0 +1,35 @@
+<!-- 
+    XML Schema Definition (XSD) for Students XML File 
+
+    XSD is used to define the structure, constraints, and data types for an XML document. 
+    It ensures that the XML follows a predefined format, making it valid and structured properly.
+
+    - `xs:schema`: Root element defining the XSD.
+    - `xs:element name="Students"`: Defines the root element of the XML file.
+    - `xs:complexType`: Represents elements that contain other nested elements.
+    - `xs:sequence`: Ensures elements appear in the specified order.
+    - `maxOccurs="unbounded"`: Allows multiple occurrences of the "Student" element.
+    - `minOccurs="0"`: Specifies that "Student" elements are optional.
+    - `xs:long` & `xs:string`: Define data types for respective elements.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="course" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="code" type="xs:string"/>
+                            <xs:element name="duration" type="xs:string"/>
+                            <xs:element name="eligibility" type="xs:string"/>
+                            <xs:element name="fees" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

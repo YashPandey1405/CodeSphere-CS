@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Online Enrollment</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+      <div class="container d-flex align-items-center justify-content-center">
+        <img src="MAIT.png" alt="University Logo" class="me-5" width="50" />
+        <h1 class="h3 mb-0 flex-grow-1 text-center">
+          University Online Enrollment System
+        </h1>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">University Enrollment</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="container mt-4">
+      <h2 class="text-center">Welcome to the Online Enrollment System</h2>
+      <p class="text-center">
+        Welcome to our University Online Enrollment System! Here, you can easily
+        explore a wide range of courses tailored to different skill levels, from
+        beginner to advanced. Our platform allows you to conveniently browse
+        available programs, check course details, and enroll in just a few
+        simple steps. Whether you're looking to enhance your technical
+        expertise, start a new career path, or upgrade your existing skills, we
+        have the right course for you. Join us today and take the next step in
+        your learning journey with ease!
+      </p>
+
+      <div id="course-list" class="table-responsive"></div>
+    </section>
+    <section class="container my-4">
+      <h3 class="mb-3">Available Courses</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Course Name</th>
+              <th>Course Code</th>
+              <th>Duration</th>
+              <th>Eligibility</th>
+              <th>Fees</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Technologies using HTML & CSS</td>
+              <td>CIE-356T-A1</td>
+              <td>11 Days</td>
+              <td>Basic Web Development Knowledge</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td>Web Technologies using JS</td>
+              <td>CIE-356T-A2</td>
+              <td>40 Days</td>
+              <td>Basic JavaScript Knowledge</td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>ReactJS Frontend Development</td>
+              <td>CIE-356T-B1</td>
+              <td>30 Days</td>
+              <td>Basic JavaScript & HTML/CSS</td>
+              <td>$1200</td>
+            </tr>
+            <tr>
+              <td>Full Stack Web Development</td>
+              <td>CIE-356T-C1</td>
+              <td>72 Days</td>
+              <td>Intermediate Web Development</td>
+              <td>$2500</td>
+            </tr>
+            <tr>
+              <td>Python for Data Science</td>
+              <td>CIE-356T-D1</td>
+              <td>45 Days</td>
+              <td>Basic Python Knowledge</td>
+              <td>$1500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="container mt-5 mb-5">
+      <h3 class="text-center mb-5">Enrollment Form</h3>
+      <form
+        id="enrollment-form"
+        class="row g-3 bg-light p-4 rounded shadow"
+        onsubmit="return validateForm()"
+      >
+        <div class="col-md-6">
+          <label for="student-name" class="form-label">Student Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="student-name"
+            name="student-name"
+            required
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="mobile" class="form-label">Mobile Number:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="mobile"
+            name="mobile"
+            required
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="course" class="form-label">Select Course:</label>
+          <select
+            id="course"
+            class="form-select"
+            name="course"
+            onchange="showAdditionalFields()"
+            required
+          >
+            <option value="">Select a course</option>
+            <option value="web-tech">Web Technologies using HTML & CSS</option>
+            <option value="js-tech">Web Technologies using JS</option>
+            <option value="react-js">ReactJS Frontend Development</option>
+            <option value="full-stack">Full Stack Web Development</option>
+            <option value="python-ds">Python for Data Science</option>
+          </select>
+        </div>
+
+        <div id="additional-fields" class="col-12"></div>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary w-50">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <!-- Social Icons -->
+        <div class="mb-3">
+          <a href="https://github.com/YashPandey1405" class="text-white me-3">
+            <i class="bi bi-github fs-4"></i>
+          </a>
+          &nbsp;
+          <a
+            href="https://www.linkedin.com/in/yashpandey29/"
+            class="text-white"
+          >
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </div>
+
+        <!-- Company Name -->
+        <p class="mb-2">© MAIT Private Limited</p>
+
+        <!-- Links -->
+        <div>
+          <a href="#" class="text-white text-decoration-none me-3">Privacy</a>
+          <a href="#" class="text-white text-decoration-none">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons (Include this if not already in your project) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </body>
+</html>

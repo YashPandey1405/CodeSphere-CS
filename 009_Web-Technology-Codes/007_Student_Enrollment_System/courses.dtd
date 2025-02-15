@@ -1,0 +1,12 @@
+<!-- 
+    DTD (Document Type Definition) defines the structure and rules for an XML document.
+    This DTD file ensures that the Students XML file follows a consistent structure.
+-->
+
+<!ELEMENT courses (course+)>
+<!ELEMENT course (name, code, duration, eligibility, fees)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT eligibility (#PCDATA)>
+<!ELEMENT fees (#PCDATA)>

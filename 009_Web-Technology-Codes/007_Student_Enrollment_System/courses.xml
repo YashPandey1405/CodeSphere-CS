@@ -1,0 +1,52 @@
+<!-- 
+    XML (Extensible Markup Language) is a markup language used to store and transport data. 
+    It is both human-readable and machine-readable, making it widely used in web development, 
+    data exchange, and configuration files.
+    
+    This XML file stores student information, including their enrolment number, name, 
+    mobile number, and email ID.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE courses SYSTEM "courses.dtd">
+<courses>
+    <course>
+        <name>Web Technologies using HTML & CSS</name>
+        <code>CIE-356T-A1</code>
+        <duration>11 Days</duration>
+        <eligibility>Basic Web Development Knowledge</eligibility>
+        <fees>500</fees>
+    </course>
+
+    <course>
+        <name>Web Technologies using JS</name>
+        <code>CIE-356T-A2</code>
+        <duration>40 Days</duration>
+        <eligibility>Basic JavaScript Knowledge</eligibility>
+        <fees>1000</fees>
+    </course>
+
+    <course>
+        <name>ReactJS Frontend Development</name>
+        <code>CIE-356T-B1</code>
+        <duration>30 Days</duration>
+        <eligibility>Basic JavaScript & HTML/CSS</eligibility>
+        <fees>1200</fees>
+    </course>
+
+    <course>
+        <name>Full Stack Web Development</name>
+        <code>CIE-356T-C1</code>
+        <duration>72 Days</duration>
+        <eligibility>Intermediate Web Development</eligibility>
+        <fees>2500</fees>
+    </course>
+
+    <course>
+        <name>Python for Data Science</name>
+        <code>CIE-356T-D1</code>
+        <duration>45 Days</duration>
+        <eligibility>Basic Python Knowledge</eligibility>
+        <fees>1500</fees>
+    </course>
+</courses>
