@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BootStrap CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator-App</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Easy-to-Use calculator</h1>
+      <div class="calculator bg-light p-3">
+        <input
+          type="text"
+          class="display form-control mb-2"
+          id="Text-Field"
+          disabled
+        />
+
+        <div class="row g-2">
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="ClearText()">
+              AC
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-light btn-custom"
+              onclick="ClearLastCharacter()"
+            >
+              C
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="SquareValue()">
+              x<sup>2</sup>
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber('/')">
+              /
+            </button>
+          </div>
+
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(7)">
+              7
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(8)">
+              8
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(9)">
+              9
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber('*')">
+              *
+            </button>
+          </div>
+
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(4)">
+              4
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(5)">
+              5
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(6)">
+              6
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber('-')">
+              -
+            </button>
+          </div>
+
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(1)">
+              1
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(2)">
+              2
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(3)">
+              3
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber('+')">
+              +
+            </button>
+          </div>
+
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber(0)">
+              0
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber('00')">
+              00
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light btn-custom" onclick="AddNumber('.')">
+              .
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary btn-custom" onclick="Evaluate()">
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center mt-3 mx-2">&nbsp; Made with ❤️ by Yash Pandey!</h2>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
