@@ -1,0 +1,20 @@
+1. Pretty Print
+   - Easy: Write a Python program to pretty-print a list of dictionaries containing employee details (name, age, department).
+   - Medium: Format and pretty-print a table displaying student names and marks using string formatting.
+
+2. Data Structures to Model the Real World
+   - Easy: Create a Car class with attributes brand, model, and year. Implement a method to display car details.
+   - Medium: Design an Employee class with attributes name, ID, and salary, and a method to give a percentage-based salary increment.
+
+3. Strings
+   - Easy: Write a Python program to reverse each word in a given string while maintaining the word order.
+   - Medium: Implement a function to check whether a given string is a valid password (at least 8 characters, contains digits, uppercase, lowercase, and a special character).
+
+4. Exception Handling
+   - Easy: Write a Python program that handles ZeroDivisionError and prompts the user to enter a valid denominator.
+   - Medium: Implement a function that opens a file and handles FileNotFoundError if the file does not exist.
+
+Merging the Topics
+   - Question 1: Create a Product class with attributes name, price, and quantity. Handle exceptions when setting the price (it must be positive) and use pretty printing to display multiple products.
+   - Question 2: Implement a function that takes a string as input, stores each unique character as a key in a dictionary with its frequency as the value, and pretty-prints the dictionary. Handle TypeError if input is not a string.
+   - Question 3: Develop a Student class with attributes name and marks (list). Implement methods to calculate the average marks and format the output using pretty printing. Handle ValueError if marks contain invalid data.
