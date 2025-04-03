@@ -1,0 +1,15 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>DiscountTag</short-name>
+    <tag>
+        <name>discount</name>
+        <tag-class>DiscountTagHandler</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>price</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
