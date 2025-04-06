@@ -1,0 +1,2 @@
+[{'age': 21, 'hobbies': ['coding', 'cricket'], 'name': 'Yash'},
+ {'age': 20, 'hobbies': ['cricket', 'chill'], 'name': 'Divyam'}]
